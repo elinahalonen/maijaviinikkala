@@ -25,7 +25,7 @@ Every detail not yet confirmed by Maija is shown on the page as a dashed `Vahvis
 
 ### Still needed from Maija
 
-- A genuine portrait she has chosen (replaces `.portrait-placeholder` in the hero)
+- A genuine portrait she has chosen (replaces `assets/images/concept-hero-placeholder*.jpg` in the hero; remove the `.concept-label` tag at the same time)
 - Exact services, with description, who each is for, duration and price
 - Professional title and qualification status, plus expected graduation date
 - Background and working approach for `Minusta`
@@ -37,7 +37,7 @@ Every detail not yet confirmed by Maija is shown on the page as a dashed `Vahvis
 
 ### Images
 
-The three images in `assets/images/` come from the moodboard. They appear to be AI-generated and are small (about 300 px wide), so they are displayed small and should be replaced with Maija's own photographs before launch. The AI-generated concept portrait is deliberately not included in this repository.
+The three images in `assets/images/` come from the moodboard. They appear to be AI-generated and are small (about 300 px wide), so they are displayed small and should be replaced with Maija's own photographs before launch. The hero currently uses the AI-generated concept portrait (`concept-hero-placeholder*.jpg`) for mockup purposes only. It is not a photograph of Maija, is tagged "Konseptikuva" on the page, and must be replaced before anything goes public.
 
 Moodboard images left out on purpose: the candle-and-oil and metal bowl shots (closer to the rejected spa/incense direction) and the treatment room (it would read as a photo of her actual practice).
 

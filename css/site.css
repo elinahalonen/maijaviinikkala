@@ -223,22 +223,34 @@ section[id] {
   font-size: 1.1875rem;
 }
 
-/* Hero */
-.hero .wrap {
-  display: grid;
-  gap: var(--space-l);
-  align-items: center;
+/* Hero: full-bleed photograph, text over its light left side on wide screens,
+   photo stacked above the text on phones. */
+.hero {
+  position: relative;
+  padding: 0;
+  overflow: hidden;
 }
 
-@media (min-width: 52rem) {
-  .hero .wrap {
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: var(--space-xl);
-  }
+.hero-media {
+  margin: 0;
 }
 
-.hero h1 em {
-  font-style: italic;
+.hero-media img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: 62% 40%;
+}
+
+.hero-content {
+  padding-top: var(--space-l);
+  padding-bottom: var(--space-xl);
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 4.6vw, 3.75rem);
+  line-height: 1.08;
+  letter-spacing: -0.01em;
 }
 
 .hero-actions {
@@ -248,34 +260,60 @@ section[id] {
   margin-top: var(--space-m);
 }
 
-/* Explicit placeholder for the portrait. Replace with a real, approved photo. */
-.portrait-placeholder {
-  aspect-ratio: 4 / 5;
-  width: 100%;
-  max-width: min(26rem, 80%);
-  margin: 0 auto;
-  background: var(--color-secondary-panel);
-  border: 1px dashed var(--brand-raspberry);
-  border-radius: var(--radius);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: var(--space-l);
-  gap: var(--space-xs);
-}
-
-.portrait-placeholder strong {
-  font-family: var(--font-heading);
-  font-weight: 400;
-  font-size: 1.375rem;
-  color: var(--color-heading);
-}
-
-.portrait-placeholder p {
-  font-size: 0.9375rem;
+.concept-label {
+  position: absolute;
+  top: var(--space-s);
+  right: var(--space-s);
+  z-index: 2;
   margin: 0;
+  background: var(--brand-plum);
+  color: var(--brand-ivory);
+  font-size: 0.8125rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+}
+
+@media (min-width: 64rem) {
+  .hero {
+    min-height: min(46rem, 88vh);
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-media {
+    position: absolute;
+    inset: 0;
+  }
+
+  .hero-media img {
+    height: 100%;
+    aspect-ratio: auto;
+    object-position: 70% 35%;
+  }
+
+  /* Ivory wash keeps the text side readable regardless of the photo. */
+  .hero-media::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(248, 245, 240, 0.94) 0%,
+      rgba(248, 245, 240, 0.86) 34%,
+      rgba(248, 245, 240, 0) 58%
+    );
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    padding-top: var(--space-xxl);
+    padding-bottom: var(--space-xxl);
+  }
+
+  .hero-content > div {
+    max-width: 31rem;
+  }
 }
 
 /* Pending content markers. Visible on purpose until Maija confirms the detail. */

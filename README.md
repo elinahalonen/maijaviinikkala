@@ -27,7 +27,7 @@ Every detail not yet confirmed by Maija is shown on the page as a dashed `Vahvis
 
 - A genuine portrait she has chosen (replaces `assets/images/concept-hero-placeholder*.jpg` in the hero; remove the `.concept-label` tag at the same time)
 - Exact services, with description, who each is for, duration and price
-- Professional title and qualification status, plus expected graduation date
+- Copy is written as at launch, after she has qualified. It calls her "koulutettu hieroja", a protected title in Finland: it may only go live once she is entered in Valvira's Terhikki register.
 - Background and working approach for `Minusta`
 - Location and arrival instructions, opening hours, accessibility, cancellation terms, payment methods
 - Contact details and booking route (only then add a "Varaa aika" button)

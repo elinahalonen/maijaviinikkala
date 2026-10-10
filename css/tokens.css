@@ -1,0 +1,90 @@
+/*
+ * Maija Viinikkala: design tokens.
+ * Single source of truth for colours, type and spacing.
+ * Values match MAIJA_BRAND_GUIDELINES.md (approved 10 October 2026).
+ */
+
+@font-face {
+  font-family: "Lora";
+  src: url("../assets/fonts/lora-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("../assets/fonts/lora-latin-400-italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("../assets/fonts/lora-latin-500-normal.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../assets/fonts/lato-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../assets/fonts/lato-latin-400-italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+/* Lato as distributed for the web has no medium or semibold; 700 stands in for both. */
+@font-face {
+  font-family: "Lato";
+  src: url("../assets/fonts/lato-latin-700-normal.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Brand palette */
+  --brand-raspberry: #8D3558;
+  --brand-ivory: #F8F5F0;
+  --brand-gold: #CFA251;      /* decorative only: 2.2:1 on ivory, never for text */
+  --brand-green: #5A6B56;
+  --brand-pale-clay: #E9D4C9;
+  --brand-plum: #352A35;
+  --brand-white: #FFFFFF;
+
+  /* Semantic roles */
+  --color-page: var(--brand-ivory);
+  --color-text: var(--brand-plum);
+  --color-heading: var(--brand-raspberry);
+  --color-primary-action: var(--brand-raspberry);
+  --color-primary-action-text: var(--brand-white);
+  --color-secondary-action: var(--brand-green);
+  --color-secondary-panel: var(--brand-pale-clay);
+  --color-accent-rule: var(--brand-gold);
+  --color-dark-section: var(--brand-plum);
+  --color-focus: var(--brand-raspberry);
+
+  /* Type */
+  --font-heading: "Lora", Georgia, "Times New Roman", serif;
+  --font-body: "Lato", "Helvetica Neue", Arial, sans-serif;
+  --text-base: 1.0625rem;
+  --leading-body: 1.65;
+  --leading-heading: 1.2;
+
+  /* Space and shape */
+  --space-xs: 0.5rem;
+  --space-s: 1rem;
+  --space-m: 1.5rem;
+  --space-l: 2.5rem;
+  --space-xl: 4rem;
+  --space-xxl: 6rem;
+  --radius: 6px;
+  --measure: 38rem;
+  --page-max: 72rem;
+}

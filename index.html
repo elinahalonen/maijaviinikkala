@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Maija Viinikkala | Hierontaa ja hyvinvointia</title>
-  <meta name="description" content="Maija Viinikkala: hierontaa ja hyvinvointia. Palvelut, käytännön tiedot ja yhteystiedot.">
-  <!-- Pre-launch draft: remove this line once Maija has approved the content. -->
+  <title>Maija Viinikkala | Hierontaa ja urheiluhierontaa</title>
+  <meta name="description" content="Yksilöllistä hierontaa ja urheiluhierontaa. Tutustu Maija Viinikkalan palveluihin ja ota yhteyttä.">
+  <!-- Private build: remove before launch. -->
   <meta name="robots" content="noindex, nofollow">
   <meta name="theme-color" content="#F8F5F0">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -28,20 +28,20 @@
 
   <a class="skip-link" href="#sisalto">Siirry sisältöön</a>
 
-  <p class="draft-banner">Luonnos: sivun tiedot vahvistetaan ennen julkaisua.</p>
-
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="#">
+      <a class="brand" href="index.html">
         <span class="brand-name">Maija Viinikkala</span>
         <span class="brand-descriptor">Hierontaa ja hyvinvointia</span>
       </a>
       <nav class="site-nav" aria-label="Päävalikko">
         <ul>
-          <li><a href="#palvelut">Palvelut</a></li>
-          <li><a href="#minusta">Minusta</a></li>
-          <li><a href="#kaytannossa">Käytännössä</a></li>
-          <li><a class="button" href="#yhteystiedot">Ota yhteyttä</a></li>
+          <li><a href="index.html" aria-current="page">Etusivu</a></li>
+          <li><a href="palvelut.html">Palvelut</a></li>
+          <li><a href="minusta.html">Minusta</a></li>
+          <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+          <!-- Becomes "Varaa aika" once a working booking route exists. -->
+          <li><a class="button" href="yhteystiedot.html">Ota yhteyttä</a></li>
         </ul>
       </nav>
     </div>
@@ -49,7 +49,7 @@
 
   <main id="sisalto">
     <section class="hero" aria-labelledby="hero-otsikko">
-      <!-- MOCKUP ONLY: AI-generated concept image, not a photograph of Maija.
+      <!-- PRIVATE DRAFT ONLY: AI-generated concept image, not a photograph of Maija.
            Replace with a genuine, Maija-approved portrait before launch,
            and remove .concept-label with it. -->
       <figure class="hero-media">
@@ -62,61 +62,49 @@
       <div class="wrap hero-content">
         <div>
           <div class="rule" aria-hidden="true"><svg><use href="#sprig"/></svg></div>
-          <h1 id="hero-otsikko">Hierontaa, johon on helppo tulla.</h1>
-          <p class="lead">Olen Maija Viinikkala, koulutettu hieroja. Täältä löydät palvelut, hinnat, käytännön tiedot ja yhteystiedot.</p>
-          <p><em>Hierontaan saa tulla juuri sellaisena kuin on.</em></p>
+          <h1 id="hero-otsikko">Hierontaa, jossa sinun on hyvä olla</h1>
+          <p class="lead">Kaipaatko helpotusta lihaskireyksiin, tukea liikunnasta palautumiseen tai vain hetken hengähdystä? Tarjoan yksilöllistä hierontaa, jossa huomioidaan toiveesi ja kehosi tarpeet.</p>
           <div class="hero-actions">
-            <a class="button" href="#palvelut">Tutustu palveluihin</a>
-            <a class="button button--outline" href="#yhteystiedot">Ota yhteyttä</a>
+            <a class="button" href="palvelut.html">Tutustu palveluihin</a>
+            <a class="button button--outline" href="yhteystiedot.html">Ota yhteyttä</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="services" id="palvelut" aria-labelledby="palvelut-otsikko">
+    <section class="services" aria-labelledby="palvelut-otsikko">
       <div class="wrap">
         <div class="rule" aria-hidden="true"><svg><use href="#sprig"/></svg></div>
-        <h2 id="palvelut-otsikko">Palvelut</h2>
-        <p>Palvelut, kestot ja hinnat vahvistetaan ennen vastaanoton avaamista.</p>
-
+        <h2 id="palvelut-otsikko">Hierontaa arkeen ja aktiiviseen elämään</h2>
+        <p>Hierontaan voi tulla monesta syystä. Joskus mielessä ovat jumittavat hartiat, toisinaan rasittuneet lihakset tai tarve pysähtyä hetkeksi. Valitsemme yhdessä tilanteeseesi sopivan käsittelyn.</p>
         <div class="card-grid">
           <article class="card">
             <h3>Hieronta</h3>
-            <p><span class="todo">Vahvistetaan: kuvaus, kenelle hoito sopii ja mitä käynnillä tapahtuu</span></p>
-            <dl>
-              <dt>Kesto</dt>
-              <dd><span class="todo">Vahvistetaan</span></dd>
-              <dt>Hinta</dt>
-              <dd><span class="todo">Vahvistetaan</span></dd>
-            </dl>
+            <p>Rauhallista tai kohdennettua lihaskäsittelyä tarpeidesi mukaan. Hieronnassa voidaan keskittyä esimerkiksi niska-hartiaseutuun, selkään tai muihin kiristyneiltä tuntuviin alueisiin.</p>
           </article>
-          <!-- Further services (for example pregnancy massage) are added only
-               once Maija has confirmed the training, scope and availability. -->
-
-          <article class="card card--clay">
-            <h3>Ensimmäistä kertaa hieronnassa?</h3>
-            <p>Käytännön tiedot ja vastaukset yleisimpiin kysymyksiin löydät alempaa.</p>
-            <a class="button button--secondary" href="#kaytannossa">Käytännön tiedot</a>
+          <article class="card card--green">
+            <h3>Urheiluhieronta</h3>
+            <p>Kohdennettua hierontaa aktiivisesti liikkuville ja muille, jotka kaipaavat lihasten huoltoa. Käsittely mukautetaan kuormitukseen, tuntemuksiin ja omiin toiveisiisi.</p>
           </article>
         </div>
+        <a class="text-link" href="palvelut.html">Katso kaikki palvelut</a>
       </div>
     </section>
 
-    <section class="about" id="minusta" aria-labelledby="minusta-otsikko">
+    <section class="split" aria-labelledby="minusta-otsikko">
       <div class="wrap">
         <div>
           <div class="rule" aria-hidden="true"><svg><use href="#sprig"/></svg></div>
-          <h2 id="minusta-otsikko">Minusta</h2>
+          <h2 id="minusta-otsikko">Hei, olen Maija</h2>
         </div>
         <div>
-          <p class="lead">Olen Maija Viinikkala, koulutettu hieroja, ja otan asiakkaita vastaan omalla vastaanotollani.</p>
-          <p><span class="todo">Vahvistetaan: tausta, koulutus ja työtapa</span></p>
+          <p class="lead">Olen Maija Viinikkala, hieroja. Haluan, että vastaanotolleni on helppo tulla ja että voit kertoa avoimesti, mitä hieronnalta toivot. Minulle tärkeää on lämmin kohtaaminen ja se, että käsittely tuntuu juuri sinulle sopivalta.</p>
+          <a class="text-link" href="minusta.html">Tutustu minuun</a>
         </div>
       </div>
     </section>
 
-    <!-- Atmosphere images from the moodboard. Provisional: replace with
-         Maija's own photographs before launch. -->
+    <!-- Moodboard atmosphere images. Replace with Maija's own photographs before launch. -->
     <div class="photo-strip">
       <div class="wrap">
         <ul>
@@ -127,57 +115,26 @@
       </div>
     </div>
 
-    <section class="practical" id="kaytannossa" aria-labelledby="kaytannossa-otsikko">
+    <section class="split tinted" aria-labelledby="ensikerta-otsikko">
       <div class="wrap">
-        <div class="rule" aria-hidden="true"><svg><use href="#sprig"/></svg></div>
-        <h2 id="kaytannossa-otsikko">Käytännössä</h2>
-        <p>Nämä tiedot on hyvä tietää ennen ajanvarausta.</p>
-
-        <dl class="info-list">
-          <div>
-            <dt>Sijainti</dt>
-            <dd><span class="todo">Vahvistetaan: osoite ja saapumisohjeet</span></dd>
-          </div>
-          <div>
-            <dt>Ajanvaraus</dt>
-            <dd><span class="todo">Vahvistetaan: miten aika varataan</span></dd>
-          </div>
-          <div>
-            <dt>Aukioloajat</dt>
-            <dd><span class="todo">Vahvistetaan</span></dd>
-          </div>
-          <div>
-            <dt>Esteettömyys</dt>
-            <dd><span class="todo">Vahvistetaan: portaat, hissi, pysäköinti</span></dd>
-          </div>
-          <div>
-            <dt>Peruutusehdot</dt>
-            <dd><span class="todo">Vahvistetaan</span></dd>
-          </div>
-          <div>
-            <dt>Maksutavat</dt>
-            <dd><span class="todo">Vahvistetaan</span></dd>
-          </div>
-        </dl>
-
-        <div class="faq">
-          <h3>Mitä ensimmäisellä hierontakäynnillä tapahtuu?</h3>
-          <p><span class="todo">Vahvistetaan: Maijan oma kuvaus käynnin kulusta</span></p>
+        <div>
+          <div class="rule" aria-hidden="true"><svg><use href="#sprig"/></svg></div>
+          <h2 id="ensikerta-otsikko">Ensimmäistä kertaa hierontaan?</h2>
+        </div>
+        <div>
+          <p>Sinun ei tarvitse tietää etukäteen, millainen hieronta sopii sinulle parhaiten. Voimme aloittaa keskustelemalla siitä, miten voit ja mitä toivot käynniltä. Käsittelyn aikana voit aina kertoa, miltä hieronta tuntuu.</p>
+          <a class="text-link" href="ennen-kayntia.html">Näin valmistaudut käyntiin</a>
         </div>
       </div>
     </section>
 
-    <section class="contact" id="yhteystiedot" aria-labelledby="yhteystiedot-otsikko">
+    <section aria-labelledby="cta-otsikko">
       <div class="wrap">
-        <div class="rule" aria-hidden="true"><svg><use href="#sprig"/></svg></div>
-        <h2 id="yhteystiedot-otsikko">Ota yhteyttä</h2>
-        <p>Kysy rohkeasti, jos jokin askarruttaa ennen ensimmäistä käyntiä.</p>
-
-        <div class="contact-panel">
-          <h3>Yhteystiedot</h3>
-          <p>Puhelin: <span class="todo">Vahvistetaan</span></p>
-          <p>Sähköposti: <span class="todo">Vahvistetaan</span></p>
-          <p>Ajanvaraus: <span class="todo">Vahvistetaan</span></p>
+        <div class="cta-panel">
+          <h2 id="cta-otsikko">Varaa hetki itsellesi</h2>
+          <p>Olipa syy tulla hierontaan pieni tai suuri, olet lämpimästi tervetullut.</p>
+          <!-- "Varaa aika" once online booking exists. -->
+          <a class="button" href="yhteystiedot.html">Ota yhteyttä</a>
         </div>
       </div>
     </section>
@@ -186,7 +143,8 @@
   <footer class="site-footer">
     <div class="wrap">
       <p><span class="brand-name">Maija Viinikkala</span><br>Hierontaa ja hyvinvointia</p>
-      <p>Y-tunnus: <span class="todo">Vahvistetaan</span><br>&copy; 2026 Maija Viinikkala</p>
+      <p><span class="todo">Paikkakunta</span> · <span class="todo">Yhteystiedot</span><br>Y-tunnus: <span class="todo">Y-tunnus</span></p>
+      <p><a href="ennen-kayntia.html">Ennen käyntiä</a><br><a href="tietosuoja.html">Tietosuojaseloste</a></p>
     </div>
   </footer>
 </body>

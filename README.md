@@ -17,23 +17,25 @@ python3 -m http.server 8000
 
 Open it over http rather than as a file, otherwise the browser blocks the preloaded fonts.
 
-## Status: draft, not ready to publish
+## Status: private build
 
-The page carries `<meta name="robots" content="noindex, nofollow">` and a visible draft banner. Remove both at launch.
+The site is built ahead of Maija's launch and written as an operating practice, in the present tense (see `docs/MAIJA_WEBSITE_COPY.md`, which is the source of truth for wording). Every page carries `<meta name="robots" content="noindex, nofollow">`; remove it at launch.
 
-Every detail not yet confirmed by Maija is shown on the page as a dashed `Vahvistetaan` marker (`.todo`). Nothing has been invented.
+Pages: `index.html`, `palvelut.html`, `minusta.html`, `ennen-kayntia.html`, `yhteystiedot.html`, `tietosuoja.html`. Header and footer are repeated in each file, so a nav change means editing all six.
 
-### Still needed from Maija
+Bracketed items from the copy doc appear as small clay-coloured `.todo` labels. They are private build placeholders and must all be gone before launch: `grep -n 'class="todo"' *.html` lists them.
 
-- A genuine portrait she has chosen (replaces `assets/images/concept-hero-placeholder*.jpg` in the hero; remove the `.concept-label` tag at the same time)
-- Exact services, with description, who each is for, duration and price
-- Copy is written as at launch, after she has qualified. It calls her "koulutettu hieroja", a protected title in Finland: it may only go live once she is entered in Valvira's Terhikki register.
-- Background and working approach for `Minusta`
-- Location and arrival instructions, opening hours, accessibility, cancellation terms, payment methods
-- Contact details and booking route (only then add a "Varaa aika" button)
-- Her own description of what happens on a first visit
-- Business ID (Y-tunnus) for the footer
-- Approval of the hero copy ("Hierontaa, johon on helppo tulla.")
+### Before launch
+
+- Real portrait to replace `assets/images/concept-hero-placeholder*.jpg`; remove the `.concept-label` tag with it
+- Location (paikkakunta), address and arrival instructions
+- Phone, email, Y-tunnus
+- Durations and prices for Hieronta and Urheiluhieronta; confirm both service names
+- Exact professional title and qualifications for the "Koulutus ja osaaminen" section (or delete the section). Copy currently says "hieroja"; "koulutettu hieroja" is a protected title and needs Valvira (Terhikki) registration
+- Booking route: once it exists, switch the "Ota yhteyttä" header and CTA buttons to "Varaa aika" (marked with comments)
+- Booking and cancellation terms
+- Privacy policy text (`tietosuoja.html`)
+- Add the location to the page titles and descriptions, as in the copy doc's SEO section
 
 ### Images
 

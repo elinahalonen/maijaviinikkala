@@ -144,7 +144,8 @@ a {
   border-bottom: 2px solid transparent;
 }
 
-.site-nav a:hover {
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
   border-bottom-color: var(--brand-raspberry);
 }
 
@@ -316,25 +317,29 @@ section[id] {
   }
 }
 
-/* Pending content markers. Visible on purpose until Maija confirms the detail. */
+/* Private build placeholders (bracketed items in docs/MAIJA_WEBSITE_COPY.md).
+   Deliberately quiet so the mockup reads as a real site; all must be
+   replaced before launch. */
 .todo {
   display: inline-block;
-  background: var(--brand-white);
+  background: var(--color-secondary-panel);
   color: var(--brand-plum);
-  border: 1px dashed var(--brand-raspberry);
   border-radius: 4px;
-  padding: 0.05rem 0.45rem;
+  padding: 0.05rem 0.5rem;
   font-size: 0.875em;
 }
 
-.draft-banner {
-  background: var(--brand-plum);
-  color: var(--brand-ivory);
-  font-size: 0.875rem;
-  text-align: center;
-  padding: var(--space-xs) var(--space-m);
-  margin: 0;
-  max-width: none;
+.text-link {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.text-link::after {
+  content: " \2192";
+}
+
+.text-link:hover {
+  text-decoration: underline;
 }
 
 /* Services */
@@ -345,7 +350,7 @@ section[id] {
 .card-grid {
   display: grid;
   gap: var(--space-m);
-  margin-top: var(--space-l);
+  margin: var(--space-l) 0 var(--space-m);
 }
 
 @media (min-width: 46rem) {
@@ -361,8 +366,7 @@ section[id] {
   padding: var(--space-l) var(--space-m);
 }
 
-.card--clay {
-  background: var(--color-secondary-panel);
+.card--green {
   border-top-color: var(--brand-green);
 }
 
@@ -381,35 +385,16 @@ section[id] {
   margin: 0;
 }
 
-/* About */
-.about .wrap {
+/* Two-column text section: heading left, body right on wide screens */
+.split .wrap {
   display: grid;
-  gap: var(--space-l);
-  align-items: center;
+  gap: var(--space-m) var(--space-xl);
 }
 
 @media (min-width: 52rem) {
-  .about .wrap {
+  .split .wrap {
     grid-template-columns: 0.8fr 1.2fr;
-    gap: var(--space-xl);
   }
-}
-
-.photo-frame {
-  border-radius: var(--radius);
-  overflow: hidden;
-  max-width: 26rem;
-}
-
-.photo-frame img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-}
-
-.photo-note {
-  font-size: 0.8125rem;
-  margin-top: var(--space-xs);
 }
 
 /* Photo strip: atmosphere images. The current files are small moodboard
@@ -438,65 +423,86 @@ section[id] {
   border-radius: var(--radius);
 }
 
-/* Practical info */
-.practical {
+/* Soft panels */
+.tinted {
   background: var(--color-secondary-panel);
 }
 
-.info-list {
-  display: grid;
-  gap: var(--space-m) var(--space-l);
-  margin: var(--space-l) 0 0;
-}
-
-@media (min-width: 46rem) {
-  .info-list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-.info-list div {
-  border-top: 1px solid var(--brand-raspberry);
-  padding-top: var(--space-s);
-}
-
-.info-list dt {
-  font-family: var(--font-heading);
-  font-size: 1.25rem;
-  color: var(--color-heading);
-  margin-bottom: var(--space-xs);
-}
-
-.info-list dd {
-  margin: 0;
-}
-
-.faq {
-  margin-top: var(--space-xl);
-}
-
-/* Contact */
-.contact {
-  text-align: left;
-}
-
-.contact-panel {
+.cta-panel {
   background: var(--brand-green);
   color: var(--brand-white);
   border-radius: var(--radius);
   padding: var(--space-l) var(--space-m);
-  margin-top: var(--space-l);
-  max-width: 40rem;
 }
 
-.contact-panel h3 {
+.cta-panel h2,
+.cta-panel h3 {
   color: var(--brand-white);
 }
 
+.cta-panel .button {
+  background: var(--brand-white);
+  color: var(--brand-raspberry);
+}
+
+.cta-panel .button:hover {
+  background: var(--brand-ivory);
+}
+
 @media (min-width: 46rem) {
-  .contact-panel {
-    padding: var(--space-l);
+  .cta-panel {
+    padding: var(--space-xl) var(--space-l);
   }
+}
+
+/* Inner page intro */
+.page-intro {
+  padding-bottom: var(--space-l);
+}
+
+.page-intro + section {
+  padding-top: 0;
+}
+
+/* FAQ */
+.faq-list {
+  margin: 0;
+  max-width: 44rem;
+}
+
+.faq-list div {
+  border-top: 1px solid var(--brand-raspberry);
+  padding: var(--space-m) 0;
+}
+
+.faq-list dt {
+  font-family: var(--font-heading);
+  font-size: 1.375rem;
+  line-height: var(--leading-heading);
+  color: var(--color-heading);
+  margin-bottom: var(--space-xs);
+}
+
+.faq-list dd {
+  margin: 0;
+}
+
+/* Contact */
+.contact-card {
+  background: var(--brand-white);
+  border-radius: var(--radius);
+  border-top: 3px solid var(--brand-raspberry);
+  padding: var(--space-l) var(--space-m);
+  max-width: 40rem;
+  margin-bottom: var(--space-l);
+}
+
+.contact-card address {
+  font-style: normal;
+}
+
+.contact-card p {
+  margin-bottom: var(--space-xs);
 }
 
 /* Footer */
@@ -520,7 +526,20 @@ section[id] {
   margin: 0;
 }
 
+.site-footer a {
+  color: var(--brand-ivory);
+}
+
 .site-footer .brand-name {
   color: var(--brand-ivory);
   font-size: 1.25rem;
+}
+
+.card h2,
+.contact-card h2 {
+  font-size: 1.625rem;
+}
+
+.tinted .todo {
+  background: var(--brand-white);
 }

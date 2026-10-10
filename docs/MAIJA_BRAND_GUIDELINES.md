@@ -1,6 +1,6 @@
 # Maija Viinikkala | Brand and social media guidelines
 
-**Status:** Approved visual direction, 10 October 2026. Working guide for website and social media, not yet a final content or service specification.
+**Status:** Approved visual direction, 10 October 2026. This is a **launch-ready brand and copy direction** for a website that will go public after Maija has completed her training. Business facts, services, and credentials require final verification before publication.
 
 ## 1. The identity in one paragraph
 
@@ -12,7 +12,9 @@ A warm, light and welcoming identity for a personal massage practice. Rich raspb
 
 **Working descriptor:** Hierontaa ja hyvinvointia
 
-**Do not invent qualifications, treatment specialisms or available services.** Maija is currently finishing massage training; pregnancy massage is an area of possible focus, and breastfeeding advice is a potential future service. Confirm the exact offering and professional titles with her before publishing.
+**Launch-time framing:** This site is being built privately **before** Maija completes her training and will be published **after** she qualifies. Write all public-facing website and social copy as a professional practice operating now: "Tarjoan hierontaa", "Varaa aika", "Hierontapalvelut". Do **not** describe Maija as a trainee, newly qualifying, about to graduate, or not yet offering massage services. These are project-timing facts, not brand messages.
+
+**Accuracy gate before publication:** Confirm the exact Finnish professional title she is entitled to use, completed qualifications and the treatments she will offer at launch. Do not invent credentials or specialisms. Pregnancy massage may be among her eventual services, and breastfeeding advice is a longer-term possibility; display either as a live service only if Maija confirms it is qualified and available at launch.
 
 ## 2. Colour palette
 
@@ -45,8 +47,8 @@ Suggested starting homepage:
 
 1. Simple header: Maija Viinikkala, a clear descriptor, navigation, and one booking/contact action.
 2. Hero with genuine photograph of Maija, a clear explanation of the practice, and a direct call to action.
-3. Services in plain language, including who each treatment is for, duration, price and what to expect once Maija confirms these details.
-4. Short introduction to Maija, her background and professional approach, using verified facts.
+3. Services in plain language, written as available treatments at launch, including who each is for, duration, price and what to expect. Use placeholders privately until Maija confirms details.
+4. Short introduction to Maija as the practising professional, her qualifications and working approach, using verified facts.
 5. Practical information: location, appointments, accessibility, cancellation terms, and contact details when available.
 6. An uncomplicated footer.
 
@@ -76,7 +78,7 @@ Useful tone examples (illustrations, **not approved service claims**):
 - “Hierontaan saa tulla juuri sellaisena kuin on.”
 - “Tutustu palveluihin” / “Ota yhteyttä” / “Varaa aika”, only if a booking route exists.
 
-Avoid unsupported promises about pain relief, pregnancy outcomes, breastfeeding outcomes or medical efficacy. Never present hoped-for future qualifications as completed.
+Avoid unsupported promises about pain relief, pregnancy outcomes, breastfeeding outcomes or medical efficacy. Write with confidence about professional massage services; do not narrate the pre-launch training timeline. Verify the official title and specialist qualifications **before the site goes live**.
 
 ## 7. Social media visual identity
 
@@ -89,6 +91,10 @@ The social feed should look like it belongs to the website while remaining more 
 - Profile image: clear natural portrait of Maija is preferable to a complicated miniature logo.
 - Export sharp text and high-quality photographs. Avoid tiny writing that becomes unreadable on a phone.
 
+### Website copy source
+
+Use **`MAIJA_WEBSITE_COPY.md`** for the full Finnish website draft and short social launch examples. It is written as a practising professional’s website, ready for launch when the business opens. Keep the copy warm, direct and service-specific; do not add any public language about preparing for graduation. The separate copy file also holds editorial placeholders for location, contact information, pricing and Maija-approved service names.
+
 ### Four repeatable post families
 
 **A. Educational / FAQ carousel**  
@@ -98,7 +104,7 @@ Warm ivory background, raspberry headline, plum body text, small gold line, poss
 A genuine Maija or practice photo with clean ivory or pale clay text space. Raspberry call-to-action. State what the service is, who it is for, and how to enquire/book. Use only verified offerings and pricing.
 
 **C. Personal / behind-the-scenes**  
-Real photo of Maija, her workspace, training or an ordinary moment connected to her practice. Minimal graphics. Let her personality come through in the caption, not an overdecorated template.
+Real photo of Maija, her workspace, professional approach or an ordinary moment connected to her practice. Minimal graphics. Let her personality come through in the caption, not an overdecorated template.
 
 **D. Short reassurance / seasonal note**  
 Botanical green or pale clay panel, a brief readable line in plum or ivory/white as appropriate, and one small botanical or gold detail. Avoid turning every post into an inspirational quotation. Do not turn moon-phase or spiritual imagery into the central business identity.
@@ -116,10 +122,10 @@ Botanical green or pale clay panel, a brief readable line in plum or ivory/white
 ### Content pillars (adapt to actual services)
 
 - Practical information: how appointments work, where to go, what to wear or expect.
-- Clear explanations of the massage services she **currently offers**.
-- Introducing the practitioner, training, working approach and practice space.
+- Clear explanations of the massage services she **offers at launch**.
+- Introducing Maija as a qualified practitioner, her verified credentials, working approach and practice space.
 - Seasonal or everyday wellbeing observations tied to her actual work, without pseudo-medical claims.
-- Pregnancy-related treatment and breastfeeding support only when relevant training, scope and availability have been confirmed.
+- Pregnancy-related treatments and breastfeeding support only if relevant qualifications, scope and availability are verified for launch.
 
 ## 8. Three things to protect as the brand develops
 
@@ -131,10 +137,11 @@ Botanical green or pale clay panel, a brief readable line in plum or ivory/white
 
 - [ ] Correct spelling: **Maija Viinikkala**.
 - [ ] Descriptor and exact services signed off by Maija.
-- [ ] Qualifications and professional titles verified as current.
+- [ ] Her training is **completed before launch** and the exact qualification, protected title (if applicable) and any specialist credentials are verified.
 - [ ] Booking/contact route tested; location and opening hours confirmed.
 - [ ] Only consented real photographs used for public identity and treatment claims.
 - [ ] Body text contrast and keyboard/mobile usability checked.
 - [ ] Gold stays decorative and green remains secondary.
+- [ ] No public-facing copy describes her as a trainee or about to graduate; copy reads as an operating professional practice.
 - [ ] Site and social samples reviewed together on a phone.
 - [ ] No triple moon or overt mystical identity introduced without a fresh explicit decision from Maija.
